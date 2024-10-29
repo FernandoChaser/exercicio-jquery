@@ -27,8 +27,10 @@ form {
     
 }
 
-ul,li {
-    text-decoration: line-through
+
+.completa {
+    text-decoration: line-through;
+    color: gray;
 }
 
 

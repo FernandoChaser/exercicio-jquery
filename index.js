@@ -2,6 +2,10 @@ $(document).ready(function() {
 
     $('#adicionar-tt').click(function() {
 
+    $('#list-tarefas').click(function() {
+
+    $(this).toggleClass('completa');
+
     var tarefa = $('#tarefa').val();
 
     if (tarefa !== '') {
@@ -10,12 +14,17 @@ $(document).ready(function() {
     
     $('#tarefa').val('');
 
+    
+
+
     } else {
         alert('Por favor ,Digite uma Tarefa!');
 
     } 
 
+        });
+
     });
 
-
 });
+
