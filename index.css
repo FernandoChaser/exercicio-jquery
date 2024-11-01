@@ -22,14 +22,17 @@ form {
     width: 300px;
 }
 
-.list-tarefas ul,li {
-    text-decoration: line-through;
-    
-}
+.completa {
 
-ul,li {
-    text-decoration: line-through
-}
+        text-decoration: line-through;
+        color: gray;
+    }
+
+
+
+
+
+
 
 
 

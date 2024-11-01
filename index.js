@@ -2,20 +2,24 @@ $(document).ready(function() {
 
     $('#adicionar-tt').click(function() {
 
-    var tarefa = $('#tarefa').val();
+        var tarefa = $('#tarefa').val();
 
-    if (tarefa !== '') {
+        if (tarefa !== '')  {
 
-    $('#list-tarefas').append('<ul>' + tarefa + '</ul>');
+            $('#list-tarefas').append('<li>' + tarefa + '</li>');
     
-    $('#tarefa').val('');
+            $('#tarefa').val('');
 
-    } else {
-        alert('Por favor ,Digite uma Tarefa!');
+        } else {
+            alert('Por favor ,Digite uma Tarefa!');
 
-    } 
+        } 
+
+            $('#list-tarefas').click(function () {
+
+                $(this).toggleClass('completa');
+            });
 
     });
-
 
 });
