@@ -15,12 +15,14 @@ $(document).ready(function() {
 
         } 
 
-            $('#list-tarefas').on('click','li',function (){
-          
-                $(this).toggleClass('completa');
-                
-            });
+
 
     });
 
+    $('#list-tarefas').on('click','li',function (){
+          
+        $(this).toggleClass('completa');
+        
+    });
+    
 });
